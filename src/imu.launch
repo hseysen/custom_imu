@@ -1,0 +1,7 @@
+<launch>
+	<param name="serial_port" type="string" value="/dev/ttyACM0"/>
+	<param name="baud_rate" type="int" value="115200"/>
+
+	<node name="custom_imu" pkg="custom_imu" type="imu.py" output="screen">
+	</node>
+</launch>
